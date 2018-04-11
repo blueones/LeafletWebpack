@@ -15,7 +15,7 @@ class Events{
 
 document.getElementById("testButton").addEventListener("click", Events.click);
 var mymap=L.map('mapL',{
-    center: [51.505, -0.09],
+    center: [41.5236, -90.5776],
     zoom: 13
 });
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
