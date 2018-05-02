@@ -18,10 +18,9 @@ var mymap=L.map('mapL',{
     center: [41.5236, -90.5776],
     zoom: 13
 });
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1Ijoic3VubnlzMzEzIiwiYSI6ImNqZmZ3c3ZnbjMwMXQ0NHFoamd1YjZkOGUifQ.LLPC76kBPSSikBJNFSZdAw'
-}).addTo(mymap);
 
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 18
+}).addTo(mymap);
